@@ -1,0 +1,26 @@
+section button{
+    color: #fefae0;
+    background-color: #283618;
+}
+
+section button:hover{
+    background-color: #457b9d;
+}
+
+.tag{
+    background-color: #fdf0d5;
+}
+
+a{
+    text-decoration: none;
+    color: #ad2831;
+}
+
+section{
+    background-color: #cad2c5;
+}
+
+section:nth-of-type(2n){
+    background-color: #84a98c;
+}
+
