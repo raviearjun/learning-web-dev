@@ -53,3 +53,13 @@ for(let k=0; k<food.length; k++){
     console.log('makanan ke', k, 'adalah ', food[k]);
 }
 // notes : continue digunakan untuk melewati satu iterasi, sedangkan break digunakan untuk menghentikan looping
+
+// nested loop
+console.log('\nmakanan yang ada di warung pak slamet (nested looping)');
+const drink = ['es teh', 'es jeruk', 'es campur', 'es kelapa', 'es teler'];
+for(let l=0; l<food.length; l++){
+    for(let m=0; m<drink.length; m++){
+        console.log('makanan ke', l, 'adalah ', food[l], 'dan minuman ke', m, 'adalah ', drink[m]);
+    }
+}
+// notes : nested loop adalah loop yang berada di dalam loop lainnya
