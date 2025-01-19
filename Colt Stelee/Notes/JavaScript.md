@@ -16,3 +16,12 @@
 - String dalam JS bisa diperlakukan layaknya array
   - bisa diakses melalui indeks layaknya array (menggunakan kurung siku)
   - memiliki fungsi-fungsi bawaan seperti `length`.
+- Semua nilai dalam JS memiliki nilai kebenaran bawaan. Selain yang ada di bawah ini, suatu nilai memiliki nilai kebenaran `true`
+  - false
+  - 0
+  - '' // empty string
+  - null
+  - undefined
+  - NaN
+    Akibatnya : variabel bisa dijadikan parameter fungsi karena mengandung nilai kebenaran
+-

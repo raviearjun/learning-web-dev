@@ -58,3 +58,19 @@ let months = [ 'January', 'March', 'April', 'June', 'July' ];
 months.splice(1, 0, 'February'); // menghapus 0 elemen dari index 1 dan menambahkan 'February' di index 1
 months.splice(3, 1, 'May'); // menghapus 1 elemen dari index 3 dan menambahkan 'May' di index 3
 console.log(months); // [ 'January', 'February', 'March', 'May', 'June', 'July' ]
+
+months.splice(2, 0, 'April');
+months.splice(6, 1, 'Agustus');
+console.log(months); // [ 'January', 'February', 'April', 'March', 'May', 'Agustus', 'July' ]
+
+// ketika kita membandingkan dua array dalam JS, kita tidak bisa menggunakan operator == atau ===
+// karena operator tersebut hanya akan membandingkan referensi dari kedua array, bukan isinya
+let arr1 = [ 1, 2, 3 ];
+let arr2 = [ 1, 2, 3 ];
+console.log(arr1 == arr2); // false
+
+let arr3 = arr1;
+console.log(arr1 == arr3); // true karena keduanya memiliki referensi yang sama
+// konsekuensi : ketika array3 diubah, maka array1 juga akan berubah
+arr1.push(4);
+console.log(arr3); // [ 1, 2, 3, 4 ]
