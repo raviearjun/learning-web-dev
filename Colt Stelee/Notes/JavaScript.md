@@ -24,4 +24,3 @@
   - undefined
   - NaN
     Akibatnya : variabel bisa dijadikan parameter fungsi karena mengandung nilai kebenaran
--

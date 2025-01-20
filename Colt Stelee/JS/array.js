@@ -74,3 +74,18 @@ console.log(arr1 == arr3); // true karena keduanya memiliki referensi yang sama
 // konsekuensi : ketika array3 diubah, maka array1 juga akan berubah
 arr1.push(4);
 console.log(arr3); // [ 1, 2, 3, 4 ]
+
+// array const dalam JS bisa diubah (ditambah, dihapus, diganti) meskipun array tersebut dideklarasikan dengan const
+// namun array const tidak bisa diubah referensinya (assignment baru), hanya bisa diubah isinya
+const arr = [ 1, 2, 3 ];
+arr.push(4); // valid
+arr.splice(1, 1, 5); // valid
+// arr = [ 1, 2, 3, 4 ]; // invalid (error) karena mengubah referensi array
+// rules of thumb : semua bisa dilakukan terhadap const array kecuali mengubah referensinya 
+
+// NESTED ARRAY
+let tictactoe = 
+[['o', 'x', 'o'], 
+['o', null, 'x'], 
+['o', 'x', 'x']];
+console.log(tictactoe);
