@@ -39,20 +39,3 @@ function addEggs(){
 callTwice(addEggs);
 console.log(numEggs); // 3
 
-// RETURN FUNCTION
-// explanation : kita bisa mengembalikan fungsi dari fungsi lain
-// example :
-function myMysteryFunction(){
-    const random = Math.random();
-    if(random > 0.5){
-        return function(){
-            console.log('Congrats, I am good!');
-        }
-    }else{
-        return function(){
-            console.log('Sorry, I am bad!');
-        }
-    }
-}
-const returnedFunction = myMysteryFunction();
-returnedFunction();

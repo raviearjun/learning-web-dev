@@ -3,3 +3,4 @@ import bahasa from '../library2/bahasa.mjs';
 
 console.log(myMath.square(3));
 console.log(bahasa.greeting('arjun'));
+console.log(bahasa);
