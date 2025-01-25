@@ -44,3 +44,6 @@ console.log(isThereMammal);
 
 isAllMammal = animal.every(animal => animal.type === "Mammal");
 console.log(isAllMammal);
+
+animal2 = animal.map(({name}) => name);
+console.log(animal2);
