@@ -1,0 +1,99 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#p1Display {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+#p2Display {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #28a745;
+}
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.display-score-container {
+    margin: 20px 0;
+}
+
+.display-score-container span {
+    font-size: 1.2em;
+}
+
+#Rounds {
+    margin: 20px 0;
+}
+
+#Rounds label {
+    font-size: 1.1em;
+}
+
+#Rounds select {
+    padding: 5px;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+#button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#button-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    margin: 1px;
+}
+        
+#button-container #p1Button {
+    background-color: #007bff !important; /* Biru */
+}
+
+#button-container #p1Button:hover {
+    background-color: #0056b3 !important; /* Biru lebih gelap saat hover */
+}
+
+#button-container #p2Button {
+    background-color: #28a745 !important; /* Hijau */
+}
+
+#button-container #p2Button:hover {
+    background-color: #218838 !important; /* Hijau lebih gelap saat hover */
+}
+
+#button-container #resetBtn {
+    background-color: #dc3545 !important; /* Merah */
+}
+
+#button-container #resetBtn:hover {
+    background-color: #c82333 !important; /* Merah lebih gelap saat hover */
+}
+
+    
