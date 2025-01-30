@@ -1,0 +1,15 @@
+{
+  "name": "json-exercise",
+  "version": "1.0.0",
+  "description": "Ini adalah direktori belajar JSON milik Arjun",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arjunn",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "figlet": "^1.8.0"
+  }
+}
