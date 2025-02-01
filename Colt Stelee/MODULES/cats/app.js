@@ -1,2 +1,2 @@
-const cats = require('./cats')
+const cats = require('.')
 console.log(cats)
