@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
 
-app.set('view engine', 'ejs')
-
+app.set('view engine', 'ejs') // express js di balik layar mencari view di folder views dan menjadikannya view engine
+ 
 app.get('/', (req, res) => {
     // res.send('Haloo sayangg!')
     // kita juga bisa mengirimkan file html, bukan hanya string seperti di atas
