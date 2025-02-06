@@ -8,7 +8,9 @@ app.use(express.static(path.join(__dirname, 'public_assets')));
 // kode di atas :
 // 1. menggunakan direktori public_assets dan menjadikannya public (bisa diakses user melalui url)
 // 2. express.static() memberikan 'apa adanya' file yang ada di dalam direktori public_assets
- 
+// 3. memungkinkan kita mengeksekusi index.js dalam direktori mundur satu level asalkan public_assets dan index.js ada di direktori yang sama
+
+
 app.set('view engine', 'ejs') // express js di balik layar mencari view di folder views dan menjadikannya view engine
 app.set('views', path.join(__dirname, '/views')) // path.join menggabungkan path ke direktori views
 // ini adalah praktik yang bagus mengingat kita kadang perlu mengeksekusi kode dari luar direktori ini
@@ -31,7 +33,6 @@ app.get('/rand', (req, res) => {
 app.get('/r/:subpath', (req, res) => {
     const { subpath } = req.params;
     const data = serverData[subpath];
-    console.log(data)
     res.render('subpath.ejs', { ...data })
 })
 
