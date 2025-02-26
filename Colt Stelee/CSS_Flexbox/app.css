@@ -1,0 +1,25 @@
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1{
+    text-align: center;
+}
+
+#container{
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+}
+
+#container div{
+    height: 200px;
+    width: 200px;
+}
