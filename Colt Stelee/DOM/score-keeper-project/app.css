@@ -96,4 +96,16 @@ main {
     background-color: #c82333 !important; /* Merah lebih gelap saat hover */
 }
 
+.winner {
+    color: #28a745;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.loser{
+    color: #dc3545;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
     
