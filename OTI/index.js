@@ -7,6 +7,9 @@ app.set('views', __dirname + '/views'); // set the views directory to the curren
 // Serve static files from /assets
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
+// Middleware untuk file statis (INI HARUS ADA)
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.get('/', (req, res) => {
   res.render('landing.ejs'); 
 });
