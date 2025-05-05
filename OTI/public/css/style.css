@@ -1,0 +1,141 @@
+body {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .hero {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+  }
+
+  .step-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28242c;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .step-circle.active {
+    background-color: #fff;
+    color: #000;
+  }
+
+  .step-box {
+    opacity: 0.8;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+  }
+
+  .step-box.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* Ganti style .timeline-indicator agar sticky dan full width */
+  .timeline-indicator {
+    width: 100%;
+    left: 50%;
+    right: 0;
+    transform: translateX(-50%);
+    margin: 0 auto 2rem auto;
+    position: sticky;
+    top: 0;
+    background: #212529;
+    z-index: 20;
+    height: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+  .timeline-line {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    right: 8%;
+    height: 4px;
+    background: #fff;
+    opacity: 0.5;
+    z-index: 0;
+    transform: translateY(-50%);
+  }
+  /* .timeline-indicator .step-circle {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+  } */
+  .hero {
+    background: white;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero .badge {
+    font-size: 1rem;
+  }
+
+  .hero h1 {
+    line-height: 1.3;
+  }
+
+  .hero img {
+    border-radius: 1rem;
+  }
+  .tech-card {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #fff;
+    border: 1px solid #ddd; /* Border tipis */
+    border-radius: 12px;
+    padding: 0.6rem 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Shadow halus */
+    transition: 0.3s ease;
+    font-weight: 500;
+    cursor: default;
+  }
+
+  .tech-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Shadow lebih dalam saat hover */
+  }
+
+  .tech-card img {
+    height: 24px;
+    width: 24px;
+    object-fit: contain;
+  }
+  .highlight {
+    color: #f8841c;
+  } /* warna oranye */
+  .btn-orange {
+    background-color: #f8841c;
+    color: white;
+    border: none;
+  }
+  .btn-orange:hover {
+    background-color: #f8841c;
+  }
+  .img-border {
+    border: 2px solid #9b5de5;
+    padding: 5px;
+  }
+  /* Tambahkan di <style> */
+  .group-photo {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .group-photo.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .bg-orange {
+    background-color: #f2851f;
+    margin: 20px;
+  }
