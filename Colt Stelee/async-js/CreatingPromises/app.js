@@ -44,20 +44,41 @@ fakeRequest('/dogs/1')
 // });
 
 
-const delayedColorChange = (color, delay) => {
+// const delayedColorChange = (color, delay) => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             document.body.style.backgroundColor = color;
+//             resolve();
+//         }, delay)
+//     })
+// }
+
+
+// delayedColorChange('red', 1000)
+//     .then(() => delayedColorChange('orange', 1000))
+//     .then(() => delayedColorChange('yellow', 1000))
+//     .then(() => delayedColorChange('green', 1000))
+//     .then(() => delayedColorChange('blue', 1000))
+//     .then(() => delayedColorChange('indigo', 1000))
+//     .then(() => delayedColorChange('violet', 1000))
+
+
+// ddefinsikan dahulu callbacknya 
+const delayedColorTheme = (color, delay) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             document.body.style.backgroundColor = color;
-            resolve();
+            resolve()
         }, delay)
     })
 }
 
+let theme = delayedColorTheme('red', 1000)
+    .then(() => delayedColorTheme('orange', 1000))
+    .then(() => delayedColorTheme('yellow', 1000))
+    .then(() => delayedColorTheme('green', 1000))
+    .then(() => delayedColorTheme('blue', 1000))
+    .then(() => delayedColorTheme('indigo', 1000))
+    .then(() => delayedColorTheme('violet', 1000))
 
-delayedColorChange('red', 1000)
-    .then(() => delayedColorChange('orange', 1000))
-    .then(() => delayedColorChange('yellow', 1000))
-    .then(() => delayedColorChange('green', 1000))
-    .then(() => delayedColorChange('blue', 1000))
-    .then(() => delayedColorChange('indigo', 1000))
-    .then(() => delayedColorChange('violet', 1000))
+console.log(theme)

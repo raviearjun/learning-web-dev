@@ -49,9 +49,16 @@ const fakeRequestPromise = (url) => {
 //     })
 
 
-
-
-
+// fakeRequestCallback('books.com', 
+//     function(response){
+//         console.log('IT WORKED (callback)!!!')
+//         console.log(response)
+//     },
+//     function(err){
+//         console.log('OH NO, ERROR (callback)!!!')
+//         console.log(err)
+//     }
+// )
 
 
 // fakeRequestPromise('yelp.com/api/coffee/page1')
@@ -165,3 +172,4 @@ fakeRequestPromise("google.com/page1")
         console.log("Oh no, error (promise)!!!")
         console.log(err)
     })
+ 
