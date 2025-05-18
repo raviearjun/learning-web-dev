@@ -6,17 +6,32 @@
     <title>Ajax dan API</title>
   </head>
   <body>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ea ipsum
-      atque eos modi voluptatum ad ex delectus explicabo corrupti voluptas
-      officiis pariatur ipsa dolores fugit fugiat in, eligendi officia?
-    </p>
-    <div>
+    <h1>Ajax dan API</h1>
+    <div id="api-data">
       <h2>Ini adalah data dari api</h2>
       <ul id="data">
         <!-- Data dari API akan ditampilkan di sini -->
       </ul>
     </div>
+
+    <div>
+      <h2>Ini adalah dad joke</h2>
+      <button id="jokeBtn">New Joke</button>
+      <ul id="newJoke">
+        <!-- Dad joke akan ditampilkan di sini -->
+      </ul>
+    </div>
+
+    <div>
+      <h2>Ini adalah section pencarian film</h2>
+      <input type="text" id="searchInput" placeholder="Search for a movie..." />
+      <button id="searchBtn">Search</button>
+      <ul id="movieList">
+        <!-- Daftar film akan ditampilkan di sini -->
+      </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
