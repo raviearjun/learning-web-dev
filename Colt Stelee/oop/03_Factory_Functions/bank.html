@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bank Registration</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+      }
+      .container {
+        max-width: 400px;
+        margin: auto;
+      }
+      h2 {
+        margin-top: 30px;
+      }
+      label {
+        display: block;
+        margin-top: 15px;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+      }
+      button {
+        margin-top: 15px;
+        padding: 8px 16px;
+      }
+      .result {
+        margin-top: 15px;
+        color: green;
+      }
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bank Registration</h1>
+      <!-- Part 1: Create New Account -->
+      <h2>Create New Account</h2>
+      <form id="createAccountForm">
+        <label for="newName">Name:</label>
+        <input type="text" id="newName" required />
+        <button type="submit">Create Account</button>
+        <div id="createResult" class="result"></div>
+      </form>
+
+      <!-- Part 2: Check Balance -->
+      <h2>Check Account Balance</h2>
+      <form id="checkBalanceForm">
+        <label for="checkName">Account Name:</label>
+        <input type="text" id="checkName" required />
+        <button type="submit">Check Balance</button>
+        <div id="balanceResult" class="result"></div>
+      </form>
+    </div>
+
+    <!-- Refer to external bank.js script -->
+    <script src="bank.js"></script>
+  </body>
+</html>
