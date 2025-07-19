@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GET and POST</title>
+  </head>
+  <body>
+    <h1>GET and POST</h1>
+    <form method="GET" action="http://localhost:3000/credentials">
+      <label for="get-name">Name:</label>
+      <input type="text" id="get-name" name="name" />
+      <button type="submit">Submit (GET)</button>
+    </form>
+    <form action="http://localhost:3000/credentials" method="post">
+      <label for="post-age">AGE:</label>
+      <input type="text" id="post-age" name="age" />
+      <button type="submit">Submit (POST)</button>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
