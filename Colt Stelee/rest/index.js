@@ -7,10 +7,11 @@ app.use(express.json());
 app.set('views', path.join(__dirname, 'views'));   
 app.set('view engine', 'ejs');
 
+// COMMENTS ROUTES
 const comments = [
-    { username : 'John', comment: 'This is a great post!' },
-    { username : 'Jane', comment: 'Thanks for sharing!' },
-    { username : 'Bob', comment: 'Very informative.' }
+    { username : 'John', comment: 'This is a great post!', id: 0 },
+    { username : 'Jane', comment: 'Thanks for sharing!', id: 1 },
+    { username : 'Bob', comment: 'Very informative.', id: 2 }
 
 ];
 
@@ -25,11 +26,19 @@ app.get('/comments/new', (req, res) => {
 app.post('/comments', (req, res) => {
     const { username, comment } = req.body;
     comments.push({ username, comment });
-    res.send('Comment received');
+    // res.send('Comment received');
+    res.redirect('/comments');
 });
 
+app.get('/comments/:id', (req, res) => {
+    const { id } = req.params;
+    const comment = comments.find(c => c.id === parseInt(id));
+    res.render('comments/show', { comment, id });
+});
+
+// CREDENTIALS ROUTES
 app.get('/credentials', (req, res) => {
-    res.json({ message: 'Credentials endpoin reached' });
+    res.json({ message: 'Credentials endpoint reached' });
 });
 
 app.post('/credentials', (req, res) => {
